@@ -30,10 +30,9 @@ USAGE
 # Commands
 <!-- commands -->
 * [`elasticsearch-knife count INDEX`](#elasticsearch-knife-count-index)
-* [`elasticsearch-knife count world`](#elasticsearch-knife-count-world)
 * [`elasticsearch-knife generate INDEX`](#elasticsearch-knife-generate-index)
 * [`elasticsearch-knife help [COMMAND]`](#elasticsearch-knife-help-command)
-* [`elasticsearch-knife mapping fields INDEX`](#elasticsearch-knife-mapping-fields-index)
+* [`elasticsearch-knife mapping array INDEX`](#elasticsearch-knife-mapping-array-index)
 * [`elasticsearch-knife plugins`](#elasticsearch-knife-plugins)
 * [`elasticsearch-knife plugins:install PLUGIN...`](#elasticsearch-knife-pluginsinstall-plugin)
 * [`elasticsearch-knife plugins:inspect PLUGIN...`](#elasticsearch-knife-pluginsinspect-plugin)
@@ -67,22 +66,6 @@ EXAMPLES
 ```
 
 _See code: [dist/commands/count/index.ts](https://github.com/datatok/elasticsearch-knife/blob/v0.4.1/dist/commands/count/index.ts)_
-
-## `elasticsearch-knife count world`
-
-Say hello world
-
-```
-USAGE
-  $ elasticsearch-knife count world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ elasticsearch-knife count world
-  hello world! (./src/commands/hello/world.ts)
-```
 
 ## `elasticsearch-knife generate INDEX`
 
@@ -130,13 +113,13 @@ DESCRIPTION
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.19/src/commands/help.ts)_
 
-## `elasticsearch-knife mapping fields INDEX`
+## `elasticsearch-knife mapping array INDEX`
 
-Check fields are ok according mapping
+List all fields with array values
 
 ```
 USAGE
-  $ elasticsearch-knife mapping fields [INDEX] --endpoint <value> [--query <value>] [--limit <value>] [--scrollSize
+  $ elasticsearch-knife mapping array [INDEX] --endpoint <value> [--query <value>] [--limit <value>] [--scrollSize
     <value>] [--ignoredFields <value>]
 
 ARGUMENTS
@@ -150,10 +133,10 @@ FLAGS
   --scrollSize=<value>     [default: 500]
 
 DESCRIPTION
-  Check fields are ok according mapping
+  List all fields with array values
 
 EXAMPLES
-  $ oex count events
+  $ oex mapping array
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
