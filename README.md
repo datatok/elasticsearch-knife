@@ -20,7 +20,7 @@ $ npm install -g elasticsearch-knife
 $ elasticsearch-knife COMMAND
 running command...
 $ elasticsearch-knife (--version)
-elasticsearch-knife/0.4.1 darwin-arm64 node-v18.11.0
+elasticsearch-knife/0.4.2 darwin-arm64 node-v18.11.0
 $ elasticsearch-knife --help [COMMAND]
 USAGE
   $ elasticsearch-knife COMMAND
@@ -65,7 +65,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/count/index.ts](https://github.com/datatok/elasticsearch-knife/blob/v0.4.1/dist/commands/count/index.ts)_
+_See code: [dist/commands/count/index.ts](https://github.com/datatok/elasticsearch-knife/blob/v0.4.2/dist/commands/count/index.ts)_
 
 ## `elasticsearch-knife generate INDEX`
 
@@ -91,7 +91,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/generate/index.ts](https://github.com/datatok/elasticsearch-knife/blob/v0.4.1/dist/commands/generate/index.ts)_
+_See code: [dist/commands/generate/index.ts](https://github.com/datatok/elasticsearch-knife/blob/v0.4.2/dist/commands/generate/index.ts)_
 
 ## `elasticsearch-knife help [COMMAND]`
 

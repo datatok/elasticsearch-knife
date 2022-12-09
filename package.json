@@ -1,6 +1,6 @@
 {
   "name": "elasticsearch-knife",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "check stuff against elasticsearch",
   "author": "Thomas Decaux @ebuildy",
   "bin": "./bin/run",
