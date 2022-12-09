@@ -1,15 +1,13 @@
 {
-  "name": "es-check",
+  "name": "elasticsearch-knife",
   "version": "0.3.0",
   "description": "check stuff against elasticsearch",
   "author": "Thomas Decaux @ebuildy",
-  "bin": {
-    "es-check": "./bin/run"
-  },
-  "homepage": "https://github.com/datatok/es-check",
+  "bin": "./bin/run",
+  "homepage": "https://github.com/datatok/elasticsearch-knife",
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "datatok/es-check",
+  "repository": "datatok/elasticsearch-knife",
   "files": [
     "/bin",
     "/dist",
@@ -42,8 +40,8 @@
     "typescript": "^4.9.3"
   },
   "oclif": {
-    "bin": "es-check",
-    "dirname": "es-check",
+    "bin": "elasticsearch-knife",
+    "dirname": "elasticsearch-knife",
     "commands": "./dist/commands",
     "plugins": [
       "@oclif/plugin-help",
@@ -68,7 +66,7 @@
   "engines": {
     "node": ">=12.0.0"
   },
-  "bugs": "https://github.com/datatok/es-check/issues",
+  "bugs": "https://github.com/datatok/elasticsearch-knife/issues",
   "keywords": [
     "oclif"
   ],

@@ -29,9 +29,11 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`es-check hello PERSON`](#es-check-hello-person)
-* [`es-check hello world`](#es-check-hello-world)
+* [`es-check count INDEX`](#es-check-count-index)
+* [`es-check count world`](#es-check-count-world)
+* [`es-check generate INDEX`](#es-check-generate-index)
 * [`es-check help [COMMAND]`](#es-check-help-command)
+* [`es-check mapping fields INDEX`](#es-check-mapping-fields-index)
 * [`es-check plugins`](#es-check-plugins)
 * [`es-check plugins:install PLUGIN...`](#es-check-pluginsinstall-plugin)
 * [`es-check plugins:inspect PLUGIN...`](#es-check-pluginsinspect-plugin)
@@ -42,45 +44,71 @@ USAGE
 * [`es-check plugins:uninstall PLUGIN...`](#es-check-pluginsuninstall-plugin-2)
 * [`es-check plugins update`](#es-check-plugins-update)
 
-## `es-check hello PERSON`
+## `es-check count INDEX`
 
-Say hello
+Count documents
 
 ```
 USAGE
-  $ es-check hello [PERSON] -f <value>
+  $ es-check count [INDEX] --endpoint <value>
 
 ARGUMENTS
-  PERSON  Person to say hello to
+  INDEX  The elasticsearch index name
 
 FLAGS
-  -f, --from=<value>  (required) Who is saying hello
+  --endpoint=<value>  (required)
 
 DESCRIPTION
-  Say hello
+  Count documents
 
 EXAMPLES
-  $ oex hello friend --from oclif
+  $ oex count events
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/datatok/es-check/blob/v0.3.0/dist/commands/hello/index.ts)_
+_See code: [dist/commands/count/index.ts](https://github.com/datatok/es-check/blob/v0.3.0/dist/commands/count/index.ts)_
 
-## `es-check hello world`
+## `es-check count world`
 
 Say hello world
 
 ```
 USAGE
-  $ es-check hello world
+  $ es-check count world
 
 DESCRIPTION
   Say hello world
 
 EXAMPLES
-  $ es-check hello world
+  $ es-check count world
   hello world! (./src/commands/hello/world.ts)
 ```
+
+## `es-check generate INDEX`
+
+Generate documents
+
+```
+USAGE
+  $ es-check generate [INDEX] --endpoint <value> [--limit <value>] [--bulkSize <value>]
+
+ARGUMENTS
+  INDEX  The elasticsearch index name
+
+FLAGS
+  --bulkSize=<value>  [default: 500]
+  --endpoint=<value>  (required)
+  --limit=<value>
+
+DESCRIPTION
+  Generate documents
+
+EXAMPLES
+  $ oex generate
+  hello friend from oclif! (./src/commands/hello/index.ts)
+```
+
+_See code: [dist/commands/generate/index.ts](https://github.com/datatok/es-check/blob/v0.3.0/dist/commands/generate/index.ts)_
 
 ## `es-check help [COMMAND]`
 
@@ -101,6 +129,33 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.19/src/commands/help.ts)_
+
+## `es-check mapping fields INDEX`
+
+Check fields are ok according mapping
+
+```
+USAGE
+  $ es-check mapping fields [INDEX] --endpoint <value> [--query <value>] [--limit <value>] [--scrollSize <value>]
+    [--ignoredFields <value>]
+
+ARGUMENTS
+  INDEX  The elasticsearch index name
+
+FLAGS
+  --endpoint=<value>       (required)
+  --ignoredFields=<value>
+  --limit=<value>
+  --query=<value>
+  --scrollSize=<value>     [default: 500]
+
+DESCRIPTION
+  Check fields are ok according mapping
+
+EXAMPLES
+  $ oex count events
+  hello friend from oclif! (./src/commands/hello/index.ts)
+```
 
 ## `es-check plugins`
 
