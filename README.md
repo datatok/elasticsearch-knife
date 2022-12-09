@@ -16,41 +16,41 @@ oclif example Hello World CLI
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g es-check
-$ es-check COMMAND
+$ npm install -g elasticsearch-knife
+$ elasticsearch-knife COMMAND
 running command...
-$ es-check (--version)
-es-check/0.3.0 darwin-arm64 node-v18.11.0
-$ es-check --help [COMMAND]
+$ elasticsearch-knife (--version)
+elasticsearch-knife/0.4.0 darwin-arm64 node-v18.11.0
+$ elasticsearch-knife --help [COMMAND]
 USAGE
-  $ es-check COMMAND
+  $ elasticsearch-knife COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`es-check count INDEX`](#es-check-count-index)
-* [`es-check count world`](#es-check-count-world)
-* [`es-check generate INDEX`](#es-check-generate-index)
-* [`es-check help [COMMAND]`](#es-check-help-command)
-* [`es-check mapping fields INDEX`](#es-check-mapping-fields-index)
-* [`es-check plugins`](#es-check-plugins)
-* [`es-check plugins:install PLUGIN...`](#es-check-pluginsinstall-plugin)
-* [`es-check plugins:inspect PLUGIN...`](#es-check-pluginsinspect-plugin)
-* [`es-check plugins:install PLUGIN...`](#es-check-pluginsinstall-plugin-1)
-* [`es-check plugins:link PLUGIN`](#es-check-pluginslink-plugin)
-* [`es-check plugins:uninstall PLUGIN...`](#es-check-pluginsuninstall-plugin)
-* [`es-check plugins:uninstall PLUGIN...`](#es-check-pluginsuninstall-plugin-1)
-* [`es-check plugins:uninstall PLUGIN...`](#es-check-pluginsuninstall-plugin-2)
-* [`es-check plugins update`](#es-check-plugins-update)
+* [`elasticsearch-knife count INDEX`](#elasticsearch-knife-count-index)
+* [`elasticsearch-knife count world`](#elasticsearch-knife-count-world)
+* [`elasticsearch-knife generate INDEX`](#elasticsearch-knife-generate-index)
+* [`elasticsearch-knife help [COMMAND]`](#elasticsearch-knife-help-command)
+* [`elasticsearch-knife mapping fields INDEX`](#elasticsearch-knife-mapping-fields-index)
+* [`elasticsearch-knife plugins`](#elasticsearch-knife-plugins)
+* [`elasticsearch-knife plugins:install PLUGIN...`](#elasticsearch-knife-pluginsinstall-plugin)
+* [`elasticsearch-knife plugins:inspect PLUGIN...`](#elasticsearch-knife-pluginsinspect-plugin)
+* [`elasticsearch-knife plugins:install PLUGIN...`](#elasticsearch-knife-pluginsinstall-plugin-1)
+* [`elasticsearch-knife plugins:link PLUGIN`](#elasticsearch-knife-pluginslink-plugin)
+* [`elasticsearch-knife plugins:uninstall PLUGIN...`](#elasticsearch-knife-pluginsuninstall-plugin)
+* [`elasticsearch-knife plugins:uninstall PLUGIN...`](#elasticsearch-knife-pluginsuninstall-plugin-1)
+* [`elasticsearch-knife plugins:uninstall PLUGIN...`](#elasticsearch-knife-pluginsuninstall-plugin-2)
+* [`elasticsearch-knife plugins update`](#elasticsearch-knife-plugins-update)
 
-## `es-check count INDEX`
+## `elasticsearch-knife count INDEX`
 
 Count documents
 
 ```
 USAGE
-  $ es-check count [INDEX] --endpoint <value>
+  $ elasticsearch-knife count [INDEX] --endpoint <value>
 
 ARGUMENTS
   INDEX  The elasticsearch index name
@@ -66,31 +66,31 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/count/index.ts](https://github.com/datatok/es-check/blob/v0.3.0/dist/commands/count/index.ts)_
+_See code: [dist/commands/count/index.ts](https://github.com/datatok/elasticsearch-knife/blob/v0.4.0/dist/commands/count/index.ts)_
 
-## `es-check count world`
+## `elasticsearch-knife count world`
 
 Say hello world
 
 ```
 USAGE
-  $ es-check count world
+  $ elasticsearch-knife count world
 
 DESCRIPTION
   Say hello world
 
 EXAMPLES
-  $ es-check count world
+  $ elasticsearch-knife count world
   hello world! (./src/commands/hello/world.ts)
 ```
 
-## `es-check generate INDEX`
+## `elasticsearch-knife generate INDEX`
 
 Generate documents
 
 ```
 USAGE
-  $ es-check generate [INDEX] --endpoint <value> [--limit <value>] [--bulkSize <value>]
+  $ elasticsearch-knife generate [INDEX] --endpoint <value> [--limit <value>] [--bulkSize <value>]
 
 ARGUMENTS
   INDEX  The elasticsearch index name
@@ -108,15 +108,15 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/generate/index.ts](https://github.com/datatok/es-check/blob/v0.3.0/dist/commands/generate/index.ts)_
+_See code: [dist/commands/generate/index.ts](https://github.com/datatok/elasticsearch-knife/blob/v0.4.0/dist/commands/generate/index.ts)_
 
-## `es-check help [COMMAND]`
+## `elasticsearch-knife help [COMMAND]`
 
-Display help for es-check.
+Display help for elasticsearch-knife.
 
 ```
 USAGE
-  $ es-check help [COMMAND] [-n]
+  $ elasticsearch-knife help [COMMAND] [-n]
 
 ARGUMENTS
   COMMAND  Command to show help for.
@@ -125,19 +125,19 @@ FLAGS
   -n, --nested-commands  Include all nested commands in the output.
 
 DESCRIPTION
-  Display help for es-check.
+  Display help for elasticsearch-knife.
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.19/src/commands/help.ts)_
 
-## `es-check mapping fields INDEX`
+## `elasticsearch-knife mapping fields INDEX`
 
 Check fields are ok according mapping
 
 ```
 USAGE
-  $ es-check mapping fields [INDEX] --endpoint <value> [--query <value>] [--limit <value>] [--scrollSize <value>]
-    [--ignoredFields <value>]
+  $ elasticsearch-knife mapping fields [INDEX] --endpoint <value> [--query <value>] [--limit <value>] [--scrollSize
+    <value>] [--ignoredFields <value>]
 
 ARGUMENTS
   INDEX  The elasticsearch index name
@@ -157,13 +157,13 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-## `es-check plugins`
+## `elasticsearch-knife plugins`
 
 List installed plugins.
 
 ```
 USAGE
-  $ es-check plugins [--core]
+  $ elasticsearch-knife plugins [--core]
 
 FLAGS
   --core  Show core plugins.
@@ -172,18 +172,18 @@ DESCRIPTION
   List installed plugins.
 
 EXAMPLES
-  $ es-check plugins
+  $ elasticsearch-knife plugins
 ```
 
 _See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v2.1.7/src/commands/plugins/index.ts)_
 
-## `es-check plugins:install PLUGIN...`
+## `elasticsearch-knife plugins:install PLUGIN...`
 
 Installs a plugin into the CLI.
 
 ```
 USAGE
-  $ es-check plugins:install PLUGIN...
+  $ elasticsearch-knife plugins:install PLUGIN...
 
 ARGUMENTS
   PLUGIN  Plugin to install.
@@ -205,23 +205,23 @@ DESCRIPTION
 
 
 ALIASES
-  $ es-check plugins add
+  $ elasticsearch-knife plugins add
 
 EXAMPLES
-  $ es-check plugins:install myplugin 
+  $ elasticsearch-knife plugins:install myplugin 
 
-  $ es-check plugins:install https://github.com/someuser/someplugin
+  $ elasticsearch-knife plugins:install https://github.com/someuser/someplugin
 
-  $ es-check plugins:install someuser/someplugin
+  $ elasticsearch-knife plugins:install someuser/someplugin
 ```
 
-## `es-check plugins:inspect PLUGIN...`
+## `elasticsearch-knife plugins:inspect PLUGIN...`
 
 Displays installation properties of a plugin.
 
 ```
 USAGE
-  $ es-check plugins:inspect PLUGIN...
+  $ elasticsearch-knife plugins:inspect PLUGIN...
 
 ARGUMENTS
   PLUGIN  [default: .] Plugin to inspect.
@@ -234,16 +234,16 @@ DESCRIPTION
   Displays installation properties of a plugin.
 
 EXAMPLES
-  $ es-check plugins:inspect myplugin
+  $ elasticsearch-knife plugins:inspect myplugin
 ```
 
-## `es-check plugins:install PLUGIN...`
+## `elasticsearch-knife plugins:install PLUGIN...`
 
 Installs a plugin into the CLI.
 
 ```
 USAGE
-  $ es-check plugins:install PLUGIN...
+  $ elasticsearch-knife plugins:install PLUGIN...
 
 ARGUMENTS
   PLUGIN  Plugin to install.
@@ -265,23 +265,23 @@ DESCRIPTION
 
 
 ALIASES
-  $ es-check plugins add
+  $ elasticsearch-knife plugins add
 
 EXAMPLES
-  $ es-check plugins:install myplugin 
+  $ elasticsearch-knife plugins:install myplugin 
 
-  $ es-check plugins:install https://github.com/someuser/someplugin
+  $ elasticsearch-knife plugins:install https://github.com/someuser/someplugin
 
-  $ es-check plugins:install someuser/someplugin
+  $ elasticsearch-knife plugins:install someuser/someplugin
 ```
 
-## `es-check plugins:link PLUGIN`
+## `elasticsearch-knife plugins:link PLUGIN`
 
 Links a plugin into the CLI for development.
 
 ```
 USAGE
-  $ es-check plugins:link PLUGIN
+  $ elasticsearch-knife plugins:link PLUGIN
 
 ARGUMENTS
   PATH  [default: .] path to plugin
@@ -299,16 +299,16 @@ DESCRIPTION
 
 
 EXAMPLES
-  $ es-check plugins:link myplugin
+  $ elasticsearch-knife plugins:link myplugin
 ```
 
-## `es-check plugins:uninstall PLUGIN...`
+## `elasticsearch-knife plugins:uninstall PLUGIN...`
 
 Removes a plugin from the CLI.
 
 ```
 USAGE
-  $ es-check plugins:uninstall PLUGIN...
+  $ elasticsearch-knife plugins:uninstall PLUGIN...
 
 ARGUMENTS
   PLUGIN  plugin to uninstall
@@ -321,17 +321,17 @@ DESCRIPTION
   Removes a plugin from the CLI.
 
 ALIASES
-  $ es-check plugins unlink
-  $ es-check plugins remove
+  $ elasticsearch-knife plugins unlink
+  $ elasticsearch-knife plugins remove
 ```
 
-## `es-check plugins:uninstall PLUGIN...`
+## `elasticsearch-knife plugins:uninstall PLUGIN...`
 
 Removes a plugin from the CLI.
 
 ```
 USAGE
-  $ es-check plugins:uninstall PLUGIN...
+  $ elasticsearch-knife plugins:uninstall PLUGIN...
 
 ARGUMENTS
   PLUGIN  plugin to uninstall
@@ -344,17 +344,17 @@ DESCRIPTION
   Removes a plugin from the CLI.
 
 ALIASES
-  $ es-check plugins unlink
-  $ es-check plugins remove
+  $ elasticsearch-knife plugins unlink
+  $ elasticsearch-knife plugins remove
 ```
 
-## `es-check plugins:uninstall PLUGIN...`
+## `elasticsearch-knife plugins:uninstall PLUGIN...`
 
 Removes a plugin from the CLI.
 
 ```
 USAGE
-  $ es-check plugins:uninstall PLUGIN...
+  $ elasticsearch-knife plugins:uninstall PLUGIN...
 
 ARGUMENTS
   PLUGIN  plugin to uninstall
@@ -367,17 +367,17 @@ DESCRIPTION
   Removes a plugin from the CLI.
 
 ALIASES
-  $ es-check plugins unlink
-  $ es-check plugins remove
+  $ elasticsearch-knife plugins unlink
+  $ elasticsearch-knife plugins remove
 ```
 
-## `es-check plugins update`
+## `elasticsearch-knife plugins update`
 
 Update installed plugins.
 
 ```
 USAGE
-  $ es-check plugins update [-h] [-v]
+  $ elasticsearch-knife plugins update [-h] [-v]
 
 FLAGS
   -h, --help     Show CLI help.
