@@ -20,7 +20,7 @@ $ npm install -g es-check
 $ es-check COMMAND
 running command...
 $ es-check (--version)
-es-check/0.2.0 darwin-arm64 node-v18.11.0
+es-check/0.3.0 darwin-arm64 node-v18.11.0
 $ es-check --help [COMMAND]
 USAGE
   $ es-check COMMAND
@@ -64,7 +64,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/datatok/es-check/blob/v0.2.0/dist/commands/hello/index.ts)_
+_See code: [dist/commands/hello/index.ts](https://github.com/datatok/es-check/blob/v0.3.0/dist/commands/hello/index.ts)_
 
 ## `es-check hello world`
 
