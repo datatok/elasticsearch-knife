@@ -14,10 +14,10 @@ interface ElasticsearchSearchScrollResponse {
 }
 
 export default class CheckFieldsMapping extends Command {
-  static description = 'Check fields are ok according mapping'
+  static description = 'List all fields with array values'
 
   static examples = [
-    `$ oex count events
+    `$ oex mapping array
 hello friend from oclif! (./src/commands/hello/index.ts)
 `,
   ]
@@ -59,7 +59,7 @@ hello friend from oclif! (./src/commands/hello/index.ts)
 
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   async runSearch(responseData: ElasticsearchSearchScrollResponse) {
-    const hits: any[] = responseData.hits.hits
+    const {hits} = responseData.hits
 
     this.countDocuments += hits.length
     this.progressBar.update(hits.length)
@@ -156,7 +156,7 @@ hello friend from oclif! (./src/commands/hello/index.ts)
 
       try {
         response = await axios.post(`${flags.endpoint}/${args.index}/_search?scroll=1m`, searchBody)
-        .catch(function (error) {
+        .catch(error => {
           console.error(error.response.data)
         })
       } catch {
