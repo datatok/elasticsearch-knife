@@ -1,7 +1,7 @@
-oclif-hello-world
+elasticsearch-knife
 =================
 
-oclif example Hello World CLI
+Do stuff with elasticsearch
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/oclif-hello-world.svg)](https://npmjs.org/package/oclif-hello-world)
@@ -29,19 +29,22 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`elasticsearch-knife count INDEX`](#elasticsearch-knife-count-index)
-* [`elasticsearch-knife generate INDEX`](#elasticsearch-knife-generate-index)
-* [`elasticsearch-knife help [COMMAND]`](#elasticsearch-knife-help-command)
-* [`elasticsearch-knife mapping array INDEX`](#elasticsearch-knife-mapping-array-index)
-* [`elasticsearch-knife plugins`](#elasticsearch-knife-plugins)
-* [`elasticsearch-knife plugins:install PLUGIN...`](#elasticsearch-knife-pluginsinstall-plugin)
-* [`elasticsearch-knife plugins:inspect PLUGIN...`](#elasticsearch-knife-pluginsinspect-plugin)
-* [`elasticsearch-knife plugins:install PLUGIN...`](#elasticsearch-knife-pluginsinstall-plugin-1)
-* [`elasticsearch-knife plugins:link PLUGIN`](#elasticsearch-knife-pluginslink-plugin)
-* [`elasticsearch-knife plugins:uninstall PLUGIN...`](#elasticsearch-knife-pluginsuninstall-plugin)
-* [`elasticsearch-knife plugins:uninstall PLUGIN...`](#elasticsearch-knife-pluginsuninstall-plugin-1)
-* [`elasticsearch-knife plugins:uninstall PLUGIN...`](#elasticsearch-knife-pluginsuninstall-plugin-2)
-* [`elasticsearch-knife plugins update`](#elasticsearch-knife-plugins-update)
+- [elasticsearch-knife](#elasticsearch-knife)
+- [Usage](#usage)
+- [Commands](#commands)
+  - [`elasticsearch-knife count INDEX`](#elasticsearch-knife-count-index)
+  - [`elasticsearch-knife generate INDEX`](#elasticsearch-knife-generate-index)
+  - [`elasticsearch-knife help [COMMAND]`](#elasticsearch-knife-help-command)
+  - [`elasticsearch-knife mapping array INDEX`](#elasticsearch-knife-mapping-array-index)
+  - [`elasticsearch-knife plugins`](#elasticsearch-knife-plugins)
+  - [`elasticsearch-knife plugins:install PLUGIN...`](#elasticsearch-knife-pluginsinstall-plugin)
+  - [`elasticsearch-knife plugins:inspect PLUGIN...`](#elasticsearch-knife-pluginsinspect-plugin)
+  - [`elasticsearch-knife plugins:install PLUGIN...`](#elasticsearch-knife-pluginsinstall-plugin-1)
+  - [`elasticsearch-knife plugins:link PLUGIN`](#elasticsearch-knife-pluginslink-plugin)
+  - [`elasticsearch-knife plugins:uninstall PLUGIN...`](#elasticsearch-knife-pluginsuninstall-plugin)
+  - [`elasticsearch-knife plugins:uninstall PLUGIN...`](#elasticsearch-knife-pluginsuninstall-plugin-1)
+  - [`elasticsearch-knife plugins:uninstall PLUGIN...`](#elasticsearch-knife-pluginsuninstall-plugin-2)
+  - [`elasticsearch-knife plugins update`](#elasticsearch-knife-plugins-update)
 
 ## `elasticsearch-knife count INDEX`
 
