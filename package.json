@@ -18,7 +18,7 @@
     "@elastic/elasticsearch": "7.17",
     "@oclif/core": "^1.19.1",
     "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.1.7",
+    "@oclif/plugin-plugins": "^2.1.8",
     "axios": "^1.2.1",
     "cli-progress": "^3.11.2",
     "dot-object": "^2.1.4"
