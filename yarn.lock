@@ -614,7 +614,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/core@npm:^1.19.1, @oclif/core@npm:^1.20.0, @oclif/core@npm:^1.20.3, @oclif/core@npm:^1.20.4":
+"@oclif/core@npm:^1.20.0, @oclif/core@npm:^1.20.3, @oclif/core@npm:^1.20.4":
   version: 1.20.4
   resolution: "@oclif/core@npm:1.20.4"
   dependencies:
@@ -647,6 +647,42 @@ __metadata:
     widest-line: ^3.1.0
     wrap-ansi: ^7.0.0
   checksum: 523446ad7b961544dde2b6a656500a4d71b1a1be89adf24668d0ab945fcf365c81c042a326e27362fd19f2b9c7f007b43ad2ae241c69b322bf748b1df96b8311
+  languageName: node
+  linkType: hard
+
+"@oclif/core@npm:^1.24.0":
+  version: 1.24.0
+  resolution: "@oclif/core@npm:1.24.0"
+  dependencies:
+    "@oclif/linewrap": ^1.0.0
+    "@oclif/screen": ^3.0.4
+    ansi-escapes: ^4.3.2
+    ansi-styles: ^4.3.0
+    cardinal: ^2.1.1
+    chalk: ^4.1.2
+    clean-stack: ^3.0.1
+    cli-progress: ^3.10.0
+    debug: ^4.3.4
+    ejs: ^3.1.6
+    fs-extra: ^9.1.0
+    get-package-type: ^0.1.0
+    globby: ^11.1.0
+    hyperlinker: ^1.0.0
+    indent-string: ^4.0.0
+    is-wsl: ^2.2.0
+    js-yaml: ^3.14.1
+    natural-orderby: ^2.0.3
+    object-treeify: ^1.1.33
+    password-prompt: ^1.1.2
+    semver: ^7.3.7
+    string-width: ^4.2.3
+    strip-ansi: ^6.0.1
+    supports-color: ^8.1.1
+    supports-hyperlinks: ^2.2.0
+    tslib: ^2.4.1
+    widest-line: ^3.1.0
+    wrap-ansi: ^7.0.0
+  checksum: 60c57b4372086424871ecd3729ed0d39e262fdf3ae626de8d1f863b58ea279569868a9268b0560170eed4565da1740d0e233b358af28633be0a55180d6eddfc1
   languageName: node
   linkType: hard
 
@@ -716,6 +752,13 @@ __metadata:
   version: 3.0.3
   resolution: "@oclif/screen@npm:3.0.3"
   checksum: c40650869b1c0c5c16e6ac4a82e10ee7a2879c85bdbddcb10b342dac84b62f6a6b69ec484d485b8ce0970b6383e87535a18737cca077e646818f240afc2a7c26
+  languageName: node
+  linkType: hard
+
+"@oclif/screen@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "@oclif/screen@npm:3.0.4"
+  checksum: 6d662c81edfbc8acb50a30001e3c2261171e8baffcd6010603c331de375c5d0c9ce6b3230f6b0ce24961bfa3531f99e771265ea74d9d7a0ee37fb9357fb436a7
   languageName: node
   linkType: hard
 
@@ -2317,7 +2360,7 @@ __metadata:
   resolution: "elasticsearch-knife@workspace:."
   dependencies:
     "@elastic/elasticsearch": 7.17
-    "@oclif/core": ^1.19.1
+    "@oclif/core": ^1.24.0
     "@oclif/plugin-help": ^5
     "@oclif/plugin-plugins": ^2.1.7
     "@oclif/test": ^2.2.12
